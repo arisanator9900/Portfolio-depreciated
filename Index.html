@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Alexander Stovall" />
+	<meta name="description" content="Portfolio website" />
+	<meta name="keywords"  content="front end developer, portfolio site, javascript" />
+	<meta name="Resource-type" content="Document" />
 
+    <title>Alex Stovall's Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+</head>
+<body>
+
+    <!--
+    <div id="fullpage">
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+    </div> -->
+    <div id="fullpage">
+        <div class="section active" id="section0"><h1>fullPage.js</h1></div> <!--Main story illustration-->
+        <div class="section" id="section1"> <!--Javascript Html Css Projects-->
+            <div class="slide active"><h1>Simple Demo</h1></div>
+            <div class="slide"><h1>Only text</h1></div>
+            <div class="slide"><h1>And text</h1></div>
+            <div class="slide"><h1>And more text</h1></div>
+        </div>
+        <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div> <!--Illustrations-->
+        <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div> <!--Street Art-->
+    </div>
+
+    <script type="text/javascript" src="fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            menu: '#menu',
+            continuousVertical: true,
+            afterLoad: function(anchorLink, index){
+                console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+            },
+             onLeave: function(index, nextIndex, direction){
+                console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+            },
+        });
+        
+    </script>
+</body>
+</html>
