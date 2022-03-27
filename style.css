@@ -1,3 +1,10 @@
+/* Portfolio project partially forked from fullpage.js 
+This source code contains all the styles for the site,
+Default fonts and backups for all pages*/
+* {
+    font-family: arial, helvetica, sans-serif;
+    color: #fff;
+}
 /* menu styles */
 #menu {
     width: auto;
@@ -6,11 +13,68 @@
     top: 0;
     right: 10px;
     border: 0;
+    font-size: 1.25em;
 }
-li {
+ul li {
     display: inline-block;
 }
 .navbar {
     float: left;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;  
     
+}
+a.navbar {
+    display: inline-block;
+    position: relative;
+} 
+
+/*Hover animations for the menu bar*/
+.navbar:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*Styling for the text and main bulk of the pages*/
+div h1 {
+    text-align: center;
+    padding: 20px; 
+}
+
+ul {
+    display: block; 
+}
+
+/*Page coloring*/
+
+#section0 {
+    background: rgb(10,224,254);
+    background: linear-gradient(0deg, rgba(10,224,254,1) 0%, rgba(0,229,211,1) 100%);
+}
+
+#section1 {
+    background: rgb(255,114,23);
+    background: linear-gradient(0deg, rgba(255,114,23,1) 0%, rgba(255,37,23,1) 100%);
+}
+
+#section2 {
+
+}
+
+#section3 {
+
 }
