@@ -53,6 +53,16 @@
                 console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
 
             },
+            //The anchors here correspond to the links on the top menu as well. but 
+            //those should be changed to go to new fullpages. 
+            anchors: ['firstPage', 'secondPage', '3rdPage'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+            responsiveHeight: 600,
+            afterResponsive: function(isResponsive){
+
+            }
         });
         
     </script>
