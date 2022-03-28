@@ -16,9 +16,9 @@
 </head>
 <body>
     <ul id="menu">
-        <li data-menuanchor="firstPage" class="active"><a class="navbar" href="#firstPage">First slide</a></li>
-        <li data-menuanchor="secondPage"><a class="navbar" href="#secondPage">Second slide</a></li>
-        <li data-menuanchor="3rdPage"><a class="navbar" href="#3rdPage">Third slide</a></li>
+        <li data-menuanchor="firstPage" class="active"><a class="navbar" href="#firstPage">Home</a></li>
+        <li data-menuanchor="secondPage"><a class="navbar" href="#secondPage">About Me</a></li>
+        <li data-menuanchor="3rdPage"><a class="navbar" href="#3rdPage">Contact</a></li>
     </ul> 
 
     <!--
@@ -31,14 +31,15 @@
     <div id="fullpage">
         <div class="section active" id="section0"><h1>Javascript Html Css</h1></div> <!--Main story illustration-->
         <div class="section" id="section1"> <h1>Github Projects</h1> </div> <!--Javascript Html Css Projects-->
-        <div class="section" id="section2"><h1>No wraps, no extra markup</h1></div> <!--Illustrations-->
-        <div class="section" id="section3"><h1>Just the simplest demo ever</h1></div> <!--Street Art-->
+        <div class="section" id="section2"><h1>Graphic Work</h1></div> <!--Illustrations-->
+        <div class="section" id="section3"><h1>Personal Art</h1></div> <!--Street Art-->
     </div>
 
     <script type="text/javascript" src="fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
-            sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            //colors of all the main sections. 
+            sectionsColor: ['#6A17FF', '#0099FF', '#FF7217', '#FF2517'],
             menu: '#menu',
             continuousVertical: true,
             afterLoad: function(anchorLink, index){
@@ -52,13 +53,14 @@
             //those should be changed to go to new fullpages. 
             anchors: ['firstPage', 'secondPage', '3rdPage'],
             //navigation bar visible or not 
-            navigation: true,
+            navigation: false,
             navigationPosition: 'right',
-            navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+            navigationTooltips: ['First page', 'Second page', 'Third page', 'last page'],
             responsiveHeight: 600,
             afterResponsive: function(isResponsive){
 
-            }
+            },
+            scrollBar: true
         });
         
     </script>

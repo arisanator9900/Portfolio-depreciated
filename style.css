@@ -53,6 +53,8 @@ a.navbar {
 div h1 {
     text-align: center;
     padding: 20px; 
+    font-size: 5em;
+    margin: 0;
 }
 
 ul {
@@ -60,7 +62,7 @@ ul {
 }
 
 /*Page coloring*/
-
+/*
 #section0 {
     background: rgb(10,224,254);
     background: linear-gradient(0deg, rgba(10,224,254,1) 0%, rgba(0,229,211,1) 100%);
@@ -71,10 +73,18 @@ ul {
     background: linear-gradient(0deg, rgba(255,114,23,1) 0%, rgba(255,37,23,1) 100%);
 }
 
-#section2 {
-
+.section #section2 {
+    color: black; 
 }
 
-#section3 {
-
+.section #section3 {
+    color: #fff; 
+}
+*/
+/*for horizontal slides and controls*/
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next{
+    right: 50px;
 }
