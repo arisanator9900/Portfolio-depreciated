@@ -30,8 +30,19 @@ a.navbar {
     position: relative;
 } 
 
+.links {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    margin: auto;
+}
+
+div a {
+    text-align: center;
+}
+
 /*Hover animations for the menu bar*/
-.navbar:after {
+.navbar:after , .links:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -44,7 +55,7 @@ a.navbar {
   transition: transform 0.25s ease-out;
 }
 
-.navbar:hover:after {
+.navbar:hover:after, .links:hover:after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
