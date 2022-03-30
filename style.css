@@ -73,29 +73,23 @@ ul {
 }
 
 /*Page coloring*/
-/*
-#section0 {
-    background: rgb(10,224,254);
-    background: linear-gradient(0deg, rgba(10,224,254,1) 0%, rgba(0,229,211,1) 100%);
-}
 
-#section1 {
-    background: rgb(255,114,23);
-    background: linear-gradient(0deg, rgba(255,114,23,1) 0%, rgba(255,37,23,1) 100%);
-}
 
-.section #section2 {
-    color: black; 
-}
-
-.section #section3 {
-    color: #fff; 
-}
-*/
 /*for horizontal slides and controls*/
 .controlArrow.prev {
     left: 50px;
 }
 .controlArrow.next{
     right: 50px;
+}
+
+/* Responsive Images styling*/
+.responsive {
+    z-index: -1;
+    width: auto;
+    height: 60%;
+    display: inline;
+}
+.title {
+    z-index: 1;
 }
