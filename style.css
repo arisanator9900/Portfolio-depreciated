@@ -5,6 +5,19 @@ Default fonts and backups for all pages*/
     font-family: arial, helvetica, sans-serif;
     color: #fff;
 }
+/*set initial view for mobile screens*/
+@media only screen and (max-width: 600px) {
+    .responsive {
+        z-index: -1;
+        width: 100%;
+        height: 60vh;
+        display: inline;
+    }
+    /*Hide informational text on front pages when screen is too small*/
+    .main-text {
+        display: none;
+    }
+  }
 /* menu styles */
 #menu {
     width: auto;
@@ -83,7 +96,7 @@ ul {
     right: 50px;
 }
 
-/* Responsive Images styling*/
+/* Responsive Images styling on main page*/
 .responsive {
     z-index: -1;
     width: auto;
