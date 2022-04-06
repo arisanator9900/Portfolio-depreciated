@@ -106,3 +106,29 @@ ul {
 .title {
     z-index: 1;
 }
+
+/*About Me and Contact Page Styling*/
+#contact-body {
+    background-color: #FF2517;
+}
+
+#about-body {
+   background-color: #0099FF;
+}
+
+.page-header {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5rem;
+    text-decoration: overline;
+}
+
+.about-p {
+    text-align: center;
+    margin: 10px; 
+    font-size: 2.5rem;
+    background-color: black;
+    border: white 5px solid;
+    border-radius: 20px;
+    padding: 5%;
+}
