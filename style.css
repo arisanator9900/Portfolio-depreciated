@@ -17,6 +17,14 @@ Default fonts and backups for all pages*/
     .main-text {
         display: none;
     }
+    .page-header {
+        display:flex;
+        justify-content:flex-start; 
+        flex-direction: column;
+
+    }
+
+
   }
 /* menu styles */
 #menu {
@@ -27,6 +35,15 @@ Default fonts and backups for all pages*/
     right: 10px;
     border: 0;
     font-size: 1.25em;
+}
+/*alternate menu style for the about and contact pages*/
+#menu2 { 
+    width: auto;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+
 }
 ul li {
     display: inline-block;
@@ -118,7 +135,7 @@ ul {
 
 .page-header {
     text-align: center;
-    margin-top: 10%;
+    display: block;
     font-size: 5rem;
     text-decoration: overline;
 }
@@ -126,9 +143,6 @@ ul {
 .about-p {
     text-align: center;
     margin: 10px; 
-    font-size: 2.5rem;
-    background-color: black;
-    border: white 5px solid;
-    border-radius: 20px;
+    font-size: 1.75rem;
     padding: 5%;
 }
