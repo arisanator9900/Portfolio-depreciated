@@ -23,8 +23,6 @@ Default fonts and backups for all pages*/
         flex-direction: column;
 
     }
-
-
   }
 /* menu styles */
 #menu {
@@ -140,9 +138,45 @@ ul {
     text-decoration: overline;
 }
 
+/*Flexbox styling for two columns*/
+.flexbox {
+    flex-direction: row;
+    display: flex;
+}
+
 .about-p {
     text-align: center;
     margin: 10px; 
     font-size: 1.75rem;
     padding: 5%;
+    width: 50%;
+    
+    
+}
+
+.heading-2 {
+    text-align: center;
+    justify-content: right;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.heading-2 a {
+    text-decoration: none;
+    
+}
+
+.heading-2 a:hover {
+    text-decoration: underline;
+} 
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    font-size: 1.5rem;
+    margin-top: 30px;
 }
