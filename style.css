@@ -65,6 +65,7 @@ a.navbar {
     margin: auto;
 }
 
+
 div a {
     text-align: center;
 }
@@ -117,6 +118,8 @@ ul {
     width: auto;
     height: 60%;
     display: inline;
+    text-align: right;
+    justify-content: right;
 }
 .title {
     z-index: 1;
@@ -135,6 +138,13 @@ ul {
     text-align: center;
     display: block;
     font-size: 5rem;
+    text-decoration: overline;
+}
+
+.mini-page-header {
+    text-align: center;
+    display: block;
+    font-size: 3rem;
     text-decoration: overline;
 }
 
